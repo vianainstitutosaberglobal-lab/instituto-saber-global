@@ -1,0 +1,235 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Cursos de Formação Continuada | Instituto Saber Global" currentPage="formacao">
+
+<!-- Section 1: Hero -->
+<section class="relative pt-24 pb-16 md:pt-48 md:pb-32 px-6 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <div class="z-10 space-y-8 text-center lg:text-left">
+      <div data-animate="fade-right" class="inline-flex items-center gap-2 px-4 py-2 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-full text-xs font-bold tracking-wider uppercase">
+        <span class="material-symbols-outlined text-sm">school</span>
+        Formação Continuada
+      </div>
+      <h1 data-animate="fade-up" style="transition-delay: 100ms;" class="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter text-on-surface leading-[1.1]">
+        Atualização Constante para um Mercado Global
+      </h1>
+      <div data-animate="fade-up" style="transition-delay: 400ms;" class="text-base sm:text-lg text-on-surface-variant max-w-xl leading-relaxed space-y-4 mx-auto lg:mx-0">
+        <p>No Instituto Saber Global, entendemos que o aprendizado não termina com a graduação. Nossos cursos de Formação Continuada são desenhados para profissionais que buscam atualização rápida, técnica e alinhada às novas exigências do mercado de trabalho.</p>
+        <p>Focamos em competências específicas que potencializam o currículo e garantem diferenciais competitivos imediatos, seja no setor público ou privado.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 700ms;" class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+        <a href="/contato" class="w-full sm:w-auto bg-gradient-to-br from-green-500 to-green-600 text-white px-8 md:px-10 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:-translate-y-1 hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined">description</span>
+          Ver Catálogo de Cursos
+        </a>
+        <a href="/contato" class="w-full sm:w-auto bg-blue-600 text-white px-8 md:px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 hover:shadow-blue-600/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined">support_agent</span>
+          Solicitar Informações
+        </a>
+      </div>
+    </div>
+    <div class="relative" data-animate="zoom-in" style="transition-delay: 300ms;">
+      <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      <div class="relative rounded-[2rem] overflow-hidden perspective-img shadow-2xl shadow-primary/20">
+        <img alt="Cursos de formacao" class="w-full h-auto max-h-[600px] object-contain bg-surface-container-lowest" src="/images/hero-formacao.png" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent pointer-events-none"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Áreas de Atuação -->
+<section class="py-16 md:py-24 px-6 bg-primary text-on-primary relative overflow-hidden">
+  <!-- Background Animations -->
+  <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-[#1ca1ff] opacity-10 rounded-full blur-[100px] animate-pulse pointer-events-none" style="animation-duration: 6s;"></div>
+  <div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-[#42a8f5] opacity-20 rounded-full blur-[150px] animate-pulse pointer-events-none" style="animation-duration: 9s;"></div>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-12 md:mb-16 space-y-4" data-animate="fade-up">
+      <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4 text-white">Áreas de Atuação</h2>
+      <div class="h-1.5 w-24 rounded-full mx-auto mb-4" style="background-color: #f5a623;"></div>
+      <p class="text-blue-100 text-lg">Especializações focadas nos pilares da economia moderna.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div data-animate="fade-up" style="transition-delay: 100ms;" class="bg-[#185880] p-8 rounded-xl shadow-lg border border-transparent flex flex-col transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 group cursor-pointer active:scale-[0.98]">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center text-on-primary-fixed mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+          <span class="material-symbols-outlined text-3xl">analytics</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Gestão e Liderança</h3>
+        <p class="text-blue-100 text-sm mb-2 font-medium">Público: Líderes, coordenadores e empreendedores.</p>
+        <p class="text-blue-100 text-sm">Foco: Desenvolvimento de competências gerenciais, inteligência emocional e gestão de equipas de alto desempenho.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 250ms;" class="bg-[#185880] p-8 rounded-xl shadow-lg border border-transparent flex flex-col transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 group cursor-pointer active:scale-[0.98]">
+        <div class="w-16 h-16 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+          <span class="material-symbols-outlined text-3xl">medical_services</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Saúde Pública e Coletiva</h3>
+        <p class="text-blue-100 text-sm mb-2 font-medium">Público: Profissionais da saúde e administradores públicos.</p>
+        <p class="text-blue-100 text-sm">Foco: Atualização em políticas de saúde, auditoria, vigilância sanitária e gestão de unidades hospitalares.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 400ms;" class="bg-[#185880] p-8 rounded-xl shadow-lg border border-transparent flex flex-col transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/30 group cursor-pointer active:scale-[0.98]">
+        <div class="w-16 h-16 bg-tertiary-fixed rounded-xl flex items-center justify-center text-on-tertiary-fixed mb-6 group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+          <span class="material-symbols-outlined text-3xl">school</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Educação e Novas Tecnologias</h3>
+        <p class="text-blue-100 text-sm mb-2 font-medium">Público: Docentes, gestores educacionais e tutores.</p>
+        <p class="text-blue-100 text-sm">Foco: Metodologias ativas, ferramentas digitais para o ensino e gestão escolar contemporânea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Diferenciais -->
+<section class="py-16 md:py-24 px-6 bg-surface">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20">
+    <div class="md:w-1/3 space-y-6 text-center md:text-left" data-animate="fade-right">
+      <h2 class="text-3xl md:text-4xl font-black tracking-tighter leading-tight">Diferenciais da Nossa Formação</h2>
+      <p class="text-on-surface-variant leading-relaxed">Nossa estrutura é pensada para quem não tem tempo a perder e exige o mais alto padrão de entrega acadêmica.</p>
+    </div>
+    <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div data-animate="fade-up" style="transition-delay: 100ms;" class="space-y-4 group">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center transition-colors group-hover:bg-primary">
+          <span class="material-symbols-outlined text-on-primary-fixed text-3xl transition-colors group-hover:text-white">speed</span>
+        </div>
+        <h4 class="text-xl font-bold text-on-surface">Metodologia Ágil</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Conteúdos diretos ao ponto, com aplicação prática imediata.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 250ms;" class="space-y-4 group">
+        <div class="w-16 h-16 bg-secondary-fixed rounded-xl flex items-center justify-center transition-colors group-hover:bg-secondary">
+          <span class="material-symbols-outlined text-on-secondary-fixed text-3xl transition-colors group-hover:text-white">verified</span>
+        </div>
+        <h4 class="text-xl font-bold text-on-surface">Certificação</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Certificados que comprovam a carga horária e as competências adquiridas.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 400ms;" class="space-y-4 group">
+        <div class="w-16 h-16 bg-tertiary-fixed rounded-xl flex items-center justify-center transition-colors group-hover:bg-tertiary">
+          <span class="material-symbols-outlined text-on-tertiary-fixed text-3xl transition-colors group-hover:text-white">calendar_today</span>
+        </div>
+        <h4 class="text-xl font-bold text-on-surface">Flexibilidade Total</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Formatos adaptados (EAD/Híbrido) para que você estude sem interromper a sua carreira.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 550ms;" class="space-y-4 group">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center transition-colors group-hover:bg-primary">
+          <span class="material-symbols-outlined text-on-primary-fixed text-3xl transition-colors group-hover:text-white">groups</span>
+        </div>
+        <h4 class="text-xl font-bold text-on-surface">Corpo Docente Especializado</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Professores com vasta experiência de mercado e vivência internacional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Por que investir? -->
+<section class="bg-surface-container-highest/30 py-16 md:py-24 px-6">
+  <div class="max-w-7xl mx-auto text-center space-y-12">
+    <h2 data-animate="fade-up" class="text-3xl md:text-5xl font-black tracking-tight">Por que investir em Formação Continuada?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div data-animate="fade-up" style="transition-delay: 100ms;" class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-xl hover:shadow-on-surface/5 group border border-transparent">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center text-on-primary-fixed mb-6 group-hover:bg-primary group-hover:text-white transition-colors mx-auto lg:mx-0">
+          <span class="material-symbols-outlined text-3xl">trending_up</span>
+        </div>
+        <p class="text-lg font-bold text-on-surface mb-2">Valorização Salarial</p>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Profissionais atualizados têm maior poder de negociação.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 250ms;" class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-xl hover:shadow-on-surface/5 group border border-transparent">
+        <div class="w-16 h-16 bg-secondary-fixed rounded-xl flex items-center justify-center text-on-secondary-fixed mb-6 group-hover:bg-secondary group-hover:text-white transition-colors mx-auto lg:mx-0">
+          <span class="material-symbols-outlined text-3xl">hub</span>
+        </div>
+        <p class="text-lg font-bold text-on-surface mb-2">Networking</p>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Conexão com outros profissionais da sua área de atuação.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 400ms;" class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-xl hover:shadow-on-surface/5 group border border-transparent">
+        <div class="w-16 h-16 bg-tertiary-fixed rounded-xl flex items-center justify-center text-on-tertiary-fixed mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors mx-auto lg:mx-0">
+          <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+        </div>
+        <p class="text-lg font-bold text-on-surface mb-2">Progressão de Carreira</p>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Pontuação em concursos públicos e processos de seleção interna.</p>
+      </div>
+      <div data-animate="fade-up" style="transition-delay: 550ms;" class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-xl hover:shadow-on-surface/5 group border border-transparent">
+        <div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center text-on-primary-fixed mb-6 group-hover:bg-primary group-hover:text-white transition-colors mx-auto lg:mx-0">
+          <span class="material-symbols-outlined text-3xl">psychology</span>
+        </div>
+        <p class="text-lg font-bold text-on-surface mb-2">Adaptação</p>
+        <p class="text-sm text-on-surface-variant leading-relaxed">Estar pronto para as transformações digitais e sociais da sua profissão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 md:py-32 px-6 bg-surface">
+  <div data-animate="zoom-in" class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-primary-container rounded-[2rem] p-8 md:p-20 text-center space-y-6 md:space-y-8 shadow-2xl relative overflow-hidden shadow-primary/20">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32 blur-xl"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-amber-500/10 rounded-full -ml-24 -mb-24 blur-xl"></div>
+    <div class="relative z-10 space-y-4 md:space-y-6">
+      <h2 class="text-3xl md:text-5xl font-black text-on-primary leading-tight">
+        Invista no seu maior ativo: o seu conhecimento.
+      </h2>
+      <p class="text-on-primary-container text-base md:text-lg max-w-2xl mx-auto opacity-90">
+        Consulte a nossa agenda de turmas abertas e as condições exclusivas para grupos.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+        <a href="/contato" class="w-full sm:w-auto justify-center bg-gradient-to-br from-green-500 to-green-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg hover:shadow-xl hover:-translate-y-1 hover:shadow-green-500/30 transition-all flex items-center gap-2 active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined">menu_book</span>
+          Ver Catálogo de Cursos
+        </a>
+        <a href="/contato" class="w-full sm:w-auto justify-center bg-blue-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl font-bold text-lg hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 hover:shadow-blue-600/30 transition-all flex items-center gap-2 active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined">support_agent</span>
+          Solicitar Informações
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style is:global>
+  /* Base animation setup */
+  [data-animate] {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  /* Reset hover duration speed */
+  [data-animate]:hover {
+    transition-duration: 150ms !important;
+  }
+  
+  /* Initial states */
+  [data-animate="fade-up"] { transform: translateY(40px); }
+  [data-animate="fade-right"] { transform: translateX(-40px); }
+  [data-animate="fade-left"] { transform: translateX(40px); }
+  [data-animate="zoom-in"] { transform: scale(0.93); }
+  
+  /* Visible state */
+  [data-animate].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+</style>
+
+<script>
+  // Setup intersection observer on page load
+  function initAnimations() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          // Unobserve to run the animation only once
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { 
+      threshold: 0.15, // Trigger when 15% visible
+      rootMargin: "0px 0px -50px 0px" // Trigger slightly before it hits bottom of viewport
+    });
+
+    document.querySelectorAll('[data-animate]').forEach((el) => {
+      observer.observe(el);
+    });
+  }
+
+  // Run immediately
+  initAnimations();
+</script>
+
+</Base>

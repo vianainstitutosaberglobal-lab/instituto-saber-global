@@ -1,0 +1,115 @@
+---
+export interface Props {
+  currentPage?: string;
+}
+const { currentPage = '' } = Astro.props;
+
+const linkBase = "text-slate-600 hover:text-sky-800 transition-colors font-bold tracking-tight text-base";
+const linkActive = "text-sky-700 border-b-2 border-sky-600 pb-1 font-bold tracking-tight text-base";
+---
+
+<nav class="fixed top-0 w-full z-50 px-4 md:px-8 py-4">
+  <div class="glass-nav max-w-7xl mx-auto rounded-full shadow-sm shadow-sky-900/5 flex justify-between items-center px-8 py-3">
+
+    <a href="/" class="flex items-center gap-3">
+      <img src="/images/logo.png" alt="Logo Instituto Saber Global" class="h-10 w-auto object-contain" />
+      <span class="text-2xl font-black tracking-tighter text-sky-900 hidden lg:block">Instituto Saber Global</span>
+    </a>
+
+    <div class="hidden md:flex flex-1 justify-center items-center gap-5">
+
+      <a href="/" class={currentPage === 'inicio' ? linkActive : linkBase}>
+        Início
+      </a>
+
+      <a href="/o-instituto" class={currentPage === 'o-instituto' ? linkActive : linkBase}>
+        O Instituto
+      </a>
+
+      <div class="relative group">
+        
+        <a
+          href="/programas"
+          class={currentPage === 'programas' || currentPage === 'formacao' ? linkActive : linkBase}
+        >
+          Programas
+          <span class="text-xs opacity-50 ml-0.5">▾</span>
+        </a>
+
+        <div class="absolute left-0 top-full mt-2 w-64 bg-white/95 backdrop-blur-xl rounded-xl shadow-xl border border-outline-variant/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <div class="py-2">
+
+            <div class="px-4 pt-2 pb-1">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-outline">Mestrados</span>
+            </div>
+            <a href="/programas#mestrado-saude-publica" class="block px-4 py-2 text-xs text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">
+              Gestão em Saúde Pública
+            </a>
+
+            <div class="mx-4 my-1 border-t border-outline-variant/20"></div>
+
+            <div class="px-4 pt-2 pb-1">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-outline">Doutorados</span>
+            </div>
+            <a href="/programas#doutorados" class="block px-4 py-2 text-xs text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">
+              Consultar Áreas Disponíveis
+            </a>
+
+            <div class="mx-4 my-1 border-t border-outline-variant/20"></div>
+
+            <div class="px-4 pt-2 pb-1">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-outline">Formação Continuada</span>
+            </div>
+            <a href="/formacao-continuada" class="block px-4 py-2 text-xs text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors">
+              Ver Cursos Disponíveis
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <a href="/parcerias" class={currentPage === 'parcerias' ? linkActive : linkBase}>
+        Parcerias
+      </a>
+
+      <a href="/reconhecimento" class={currentPage === 'reconhecimento' ? linkActive : linkBase}>
+        Reconhecimento
+      </a>
+
+      <a href="/blog" class={currentPage === 'blog' ? linkActive : linkBase}>
+        Blog
+      </a>
+
+      <a href="/contato" class={currentPage === 'contato' ? linkActive : linkBase}>
+        Contato
+      </a>
+
+    </div>
+
+    <button class="md:hidden flex flex-col gap-1.5 p-2" id="menu-toggle" aria-label="Abrir menu">
+      <span class="w-6 h-0.5 bg-on-surface block"></span>
+      <span class="w-6 h-0.5 bg-on-surface block"></span>
+      <span class="w-6 h-0.5 bg-on-surface block"></span>
+    </button>
+
+  </div>
+
+  <div class="hidden md:hidden glass-nav max-w-7xl mx-auto rounded-xl mt-2 px-6 py-4 shadow-lg" id="mobile-menu">
+    <div class="flex flex-col gap-4">
+      <a href="/" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Início</a>
+      <a href="/o-instituto" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">O Instituto</a>
+      <a href="/programas" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Mestrados e Doutorados</a>
+      <a href="/formacao-continuada" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Formação Continuada</a>
+      <a href="/parcerias" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Parcerias</a>
+      <a href="/reconhecimento" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Processo de Reconhecimento</a>
+      <a href="/blog" class="font-bold text-sm text-on-surface py-2 border-b border-outline-variant/20">Blog/Notícias</a>
+      <a href="/contato" class="font-bold text-sm text-on-surface py-2">Contato</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

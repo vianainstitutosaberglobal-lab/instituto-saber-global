@@ -1,0 +1,171 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Processo de Reconhecimento | Instituto Saber Global" currentPage="reconhecimento">
+
+<!-- Section 1: Hero -->
+<section class="px-6 md:px-20 py-20 flex flex-col md:flex-row items-center gap-16 max-w-7xl mx-auto pt-32">
+  <div class="flex-1 space-y-8">
+    <span class="inline-block px-4 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold tracking-widest uppercase rounded-full">
+      Processo de Equivalência
+    </span>
+    <h1 class="text-5xl md:text-7xl font-bold text-on-surface tracking-tighter leading-none">
+      Reconhecimento de Diplomas <span class="text-primary italic">Estrangeiros</span> no Brasil
+    </h1>
+    <div class="text-lg text-on-surface-variant leading-relaxed max-w-xl space-y-4">
+      <p>O Instituto Saber Global preza pela transparência e conformidade com as normas educacionais brasileiras. Ao cursar um Mestrado ou Doutorado internacional, o aluno deve estar ciente de que, para ter validade plena no Brasil (para fins de docência em universidades públicas ou progressão de carreira no funcionalismo), o título deve passar pelo processo de reconhecimento.</p>
+      <p>Este procedimento é regido pelo Decreto nº 9.235/2017 e pela Resolução CNE/CES nº 1/2022, que estabelecem as normas para títulos obtidos em instituições estrangeiras.</p>
+    </div>
+    <div class="flex flex-wrap gap-4 pt-4">
+      <a href="/contato" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-3 shadow-xl shadow-primary/10 hover:-translate-y-1 transition-all">
+        Falar com Especialista
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+      <a href="/contato" class="bg-surface-container-lowest text-tertiary px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:bg-surface-container-high transition-all">
+        Guia Carolina Bori
+      </a>
+    </div>
+  </div>
+  <div class="flex-1 relative">
+    <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+    <div class="bg-surface-container-high w-full aspect-square rounded-3xl overflow-hidden shadow-2xl">
+      <img alt="Diploma e credenciais acadêmicas" class="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 grayscale-[20%]" src="/images/reconhecimento.png" />
+    </div>
+    <div class="absolute -bottom-6 -right-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-outline-variant/15">
+      <div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center">
+        <span class="material-symbols-outlined text-on-secondary-fixed">verified</span>
+      </div>
+      <div>
+        <p class="text-xs font-bold text-on-surface-variant uppercase">Certificação</p>
+        <p class="text-sm font-bold">MEC &amp; CAPES</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Revalidação vs Reconhecimento -->
+<section class="bg-surface-container-low py-24">
+  <div class="max-w-7xl mx-auto px-6 md:px-20">
+    <div class="mb-16 text-center">
+      <h2 class="text-4xl font-bold tracking-tight mb-4">O que é o Reconhecimento?</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto leading-relaxed">Diferente da graduação (que passa por revalidação), os títulos de pós-graduação stricto sensu (Mestrado e Doutorado) passam pelo processo de reconhecimento.</p>
+    </div>
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-surface-container-lowest p-10 rounded-3xl border border-outline-variant/10 shadow-sm group">
+        <div class="flex flex-col sm:flex-row items-center gap-8">
+          <div class="w-20 h-20 bg-primary/5 rounded-2xl flex items-center justify-center group-hover:bg-primary/10 transition-colors shrink-0">
+            <span class="material-symbols-outlined text-primary text-4xl">verified</span>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed text-lg text-justify">
+            Este trâmite é realizado por universidades brasileiras (públicas ou privadas) que possuam cursos avaliados pela CAPES na mesma área de conhecimento e em nível igual ou superior.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Plataforma Carolina Bori -->
+<section class="py-24 px-6 md:px-20 max-w-7xl mx-auto overflow-hidden">
+  <div class="flex flex-col md:flex-row items-center gap-20">
+    <div class="w-full md:w-1/2 relative">
+      <div class="bg-surface-container-high rounded-3xl p-4 shadow-inner">
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-white border border-outline-variant/20 shadow-2xl">
+          <img alt="Interface da Plataforma Carolina Bori" class="w-full h-full object-cover" src="/images/placeholder.jpg" />
+        </div>
+      </div>
+      <div class="absolute -top-6 -right-6 bg-amber-500 text-white p-6 rounded-2xl shadow-xl flex items-center gap-3">
+        <span class="material-symbols-outlined">bolt</span>
+        <span class="font-bold">Agilidade Digital</span>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 space-y-8">
+      <h2 class="text-4xl font-bold tracking-tight">Centralização e Agilidade</h2>
+      <p class="text-on-surface-variant text-lg leading-relaxed text-justify">
+        O processo de reconhecimento é feito de forma digital através da Plataforma Carolina Bori, o sistema oficial do Ministério da Educação (MEC).
+      </p>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold">1</div>
+          <div>
+            <h4 class="font-bold text-on-surface">Transparência</h4>
+            <p class="text-sm text-on-surface-variant">O aluno pode acompanhar todas as etapas do processo online.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold">2</div>
+          <div>
+            <h4 class="font-bold text-on-surface">Padronização</h4>
+            <p class="text-sm text-on-surface-variant">A plataforma reúne as normas e os procedimentos para que o trâmite ocorra com isonomia e clareza.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold">3</div>
+          <div>
+            <h4 class="font-bold text-on-surface">Critérios</h4>
+            <p class="text-sm text-on-surface-variant">A análise foca na equivalência acadêmica, mérito e qualidade da tese ou dissertação defendida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: O Papel do Instituto -->
+<section class="bg-primary text-on-primary py-24">
+  <div class="max-w-7xl mx-auto px-6 md:px-20 text-center">
+    <span class="font-bold tracking-widest uppercase text-xs text-primary-fixed-dim">Expertise Institucional</span>
+    <h2 class="text-4xl font-bold mt-4 mb-8 tracking-tight">Assessoria e Suporte Documental</h2>
+    <p class="text-lg opacity-90 max-w-2xl mx-auto mb-16">Para facilitar essa jornada, o Instituto Saber Global oferece suporte especializado aos seus alunos:</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <span class="material-symbols-outlined text-4xl text-primary-fixed-dim">description</span>
+        <h3 class="text-xl font-bold">Orientação Documental</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Auxílio na organização dos históricos, diplomas e ementas conforme exigido pelas universidades brasileiras.</p>
+      </div>
+      <div class="space-y-4">
+        <span class="material-symbols-outlined text-4xl text-primary-fixed-dim">public</span>
+        <h3 class="text-xl font-bold">Trâmites no Exterior</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Orientação sobre o apostilamento de Haia e legalizações necessárias no país de origem (Paraguai/UNADES).</p>
+      </div>
+      <div class="space-y-4">
+        <span class="material-symbols-outlined text-4xl text-primary-fixed-dim">school</span>
+        <h3 class="text-xl font-bold">Consultoria Educativa</h3>
+        <p class="opacity-80 text-sm leading-relaxed">Explicação detalhada sobre os acordos de admissão de títulos no âmbito do Mercosul.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Acordos MERCOSUL -->
+<section class="py-24 px-6 md:px-20 max-w-7xl mx-auto">
+  <div class="bg-surface-container p-12 rounded-3xl flex flex-col md:flex-row gap-12 items-center">
+    <div class="md:w-1/3">
+      <img alt="Acordos Mercosul" class="rounded-3xl shadow-lg w-full object-cover" src="/images/placeholder.jpg" />
+    </div>
+    <div class="md:w-2/3 space-y-6">
+      <h2 class="text-3xl font-bold tracking-tight">Acordos MERCOSUL</h2>
+      <p class="text-on-surface-variant leading-relaxed text-justify">
+        Os cursos oferecidos pela Universidad Del Sol (UNADES) seguem os protocolos de integração educacional do Mercosul. Embora os acordos facilitem a admissão para fins de estudo e pesquisa, o reconhecimento para fins profissionais e de exercício de magistério segue a legislação específica do MEC.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Final -->
+<section class="py-20 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold tracking-tight mb-4">Tire suas dúvidas sobre a validade do seu título.</h2>
+    <p class="text-lg text-on-surface-variant mb-8 max-w-2xl mx-auto">Nossa equipe jurídica e acadêmica está pronta para orientar você sobre cada passo do reconhecimento.</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-6">
+      <a href="/contato" class="bg-primary text-on-primary px-10 py-5 rounded-2xl font-extrabold text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all">
+        Falar com Especialista em Reconhecimento
+      </a>
+      <a href="/contato" class="bg-surface-container-high text-on-surface-variant px-10 py-5 rounded-2xl font-bold text-lg hover:bg-surface-container-highest transition-colors">
+        Acessar Guia da Plataforma Carolina Bori
+      </a>
+    </div>
+  </div>
+</section>
+
+</Base>

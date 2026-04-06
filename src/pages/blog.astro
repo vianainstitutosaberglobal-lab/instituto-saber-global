@@ -1,0 +1,147 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Blog/Notícias | Instituto Saber Global" currentPage="blog">
+
+<!-- Section 1: Hero Editorial -->
+<section class="max-w-7xl mx-auto px-6 mb-12 md:mb-20 pt-24 md:pt-32">
+  <div class="flex flex-col md:flex-row items-center md:items-end gap-10 md:gap-12">
+    <div class="md:w-2/3 text-center md:text-left">
+      <span class="text-tertiary font-bold tracking-widest text-xs uppercase mb-4 block">Editorial Acadêmico</span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter text-on-surface leading-tight mb-6 md:mb-8">
+        Saber Global: <br class="hidden md:block"/><span class="text-primary-container">Conhecimento em Pauta</span>
+      </h1>
+      <p class="text-on-surface-variant text-base sm:text-lg max-w-xl mx-auto md:mx-0 leading-relaxed">
+        Acompanhe as últimas atualizações sobre pós-graduação internacional, tendências em gestão de saúde, notícias acadêmicas da UNADES e guias práticos sobre o cenário educacional no Mercosul.
+      </p>
+    </div>
+    <div class="md:w-1/3 flex justify-center md:justify-end w-full">
+      <div class="bg-surface-container-high p-6 md:p-8 rounded-xl w-full max-w-sm md:max-w-none">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="material-symbols-outlined text-primary text-4xl">menu_book</span>
+          <div>
+            <div class="font-bold text-sm text-on-surface">Edição Semanal</div>
+            <div class="text-xs text-on-surface-variant">15 de Março, 2026</div>
+          </div>
+        </div>
+        <div class="h-1 w-full bg-outline-variant/30 rounded-full overflow-hidden">
+          <div class="h-full bg-primary w-2/3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Filtros -->
+<section class="max-w-7xl mx-auto px-6 mb-12">
+  <div class="flex flex-wrap items-center gap-3 py-6 border-y border-outline-variant/10 justify-center md:justify-start">
+    <span class="text-sm font-bold text-on-surface-variant mr-0 md:mr-4 w-full md:w-auto text-center md:text-left mb-2 md:mb-0">Filtrar por:</span>
+    <button class="px-5 md:px-6 py-2 bg-primary text-on-primary rounded-full text-xs md:text-sm font-medium transition-all" title="Ver todas">Todas as Notícias</button>
+    <button class="px-5 md:px-6 py-2 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs md:text-sm font-medium transition-all" title="Experiências de alunos e rotina de estudos.">Vida Acadêmica</button>
+    <button class="px-5 md:px-6 py-2 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs md:text-sm font-medium transition-all" title="Dicas de ascensão profissional e formação continuada.">Carreira e Gestão</button>
+    <button class="px-5 md:px-6 py-2 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs md:text-sm font-medium transition-all" title="Atualizações sobre a Plataforma Carolina Bori e normas do MEC.">Legislação</button>
+    <button class="px-5 md:px-6 py-2 bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high rounded-full text-xs md:text-sm font-medium transition-all" title="Editais, novas parcerias e eventos em Fortaleza e Assunção.">Institucional</button>
+  </div>
+</section>
+
+<!-- Section 3: Cards de Notícias -->
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-12 gap-8 mb-24">
+
+  <!-- Card Destaque -->
+  <div class="col-span-12 lg:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest transition-all duration-500 hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-on-surface/5 border border-transparent flex flex-col md:flex-row h-full">
+    <div class="flex flex-col md:flex-row h-full w-full">
+      <div class="md:w-1/2 overflow-hidden">
+        <img class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700 min-h-[300px]" alt="Diplomas acadêmicos sobre mesa" src="/images/blog-diplomas.png" />
+      </div>
+      <div class="md:w-1/2 p-10 flex flex-col justify-center">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="bg-tertiary/10 text-tertiary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Guia de Reconhecimento</span>
+          <span class="text-on-surface-variant text-xs font-medium">Legislação</span>
+        </div>
+        <h2 class="text-3xl font-bold tracking-tight text-on-surface mb-4">
+          Passo a passo: Como funciona a Plataforma Carolina Bori em 2026?
+        </h2>
+        <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">
+          Entenda o fluxo digital para o reconhecimento de diplomas estrangeiros e quais documentos você já deve separar.
+        </p>
+        <a class="inline-flex items-center gap-2 text-primary font-bold text-sm group/link" href="#">
+          Ler Artigo Completo
+          <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Parceria UNADES -->
+  <div class="col-span-12 md:col-span-6 lg:col-span-4 group bg-surface-container-low p-8 rounded-xl flex flex-col justify-between hover:shadow-xl hover:shadow-on-surface/5 transition-all duration-500 hover:-translate-y-1 active:scale-[0.98] cursor-pointer border border-transparent">
+    <div>
+      <div class="w-16 h-16 rounded-xl bg-primary-fixed flex items-center justify-center mb-6 shadow-sm group-hover:bg-primary transition-colors">
+        <span class="material-symbols-outlined text-on-primary-fixed group-hover:text-white transition-colors text-3xl">handshake</span>
+      </div>
+      <h3 class="text-xl font-bold text-on-surface mb-3 transition-colors">
+        Mestrado em Gestão em Saúde Pública: Por que o Paraguai é o destino dos brasileiros?
+      </h3>
+      <p class="text-on-surface-variant text-sm transition-colors">
+        Analisamos o crescimento da busca por títulos internacionais e as vantagens competitivas do convênio com a Universidad Del Sol.
+      </p>
+    </div>
+    <div class="mt-8 pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+      <span class="text-xs font-medium text-primary font-bold transition-colors">Ler Artigo Completo</span>
+      <span class="material-symbols-outlined text-primary transition-colors">arrow_forward</span>
+    </div>
+  </div>
+
+  <!-- Card Formação Continuada -->
+  <div class="col-span-12 md:col-span-6 lg:col-span-4 group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] cursor-pointer hover:shadow-on-surface/5 border border-transparent flex flex-col justify-between">
+    <div class="w-full">
+      <div class="h-48 overflow-hidden">
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Ambiente de aprendizado digital moderno" src="/images/blog-digital-learning.png" />
+      </div>
+      <div class="p-8 pb-4">
+        <div class="text-xs font-bold text-secondary mb-2">FORMAÇÃO CONTINUADA</div>
+        <h3 class="text-lg font-bold text-on-surface mb-4 leading-snug">
+          O impacto da formação continuada na progressão salarial do servidor público.
+        </h3>
+        <p class="text-sm text-on-surface-variant mb-6">
+          Como cursos de atualização podem ser o diferencial para bônus de qualificação e novos cargos de liderança.
+        </p>
+      </div>
+    </div>
+    <div class="px-8 pb-8 mt-auto">
+      <a class="inline-flex items-center gap-2 text-primary font-bold text-sm group/link" href="#">
+        Ler Artigo Completo
+        <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Evento card omitted as per new content -->
+
+</section>
+
+<!-- Section 4: Newsletter -->
+<section class="max-w-7xl mx-auto px-6 mb-20">
+  <div class="bg-gradient-to-br from-primary to-primary-container rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-container/20 rounded-full translate-y-1/2 -translate-x-1/4 blur-3xl"></div>
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <span class="text-primary-fixed font-bold tracking-[0.2em] text-xs uppercase mb-6 block">Comunidade Saber Global</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-on-primary mb-4 md:mb-6 leading-tight">
+        Fique por dentro dos novos editais.
+      </h2>
+      <p class="text-primary-fixed-dim text-base md:text-lg mb-8 md:mb-10 mx-auto max-w-md md:max-w-none">
+        Inscreva-se para receber em primeira mão as datas de matrículas e novos cursos de formação continuada.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4">
+        <input class="flex-grow w-full md:w-auto px-6 md:px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:bg-white/20 transition-all" placeholder="E-mail" type="email" />
+        <button class="w-full md:w-auto shrink-0 bg-gradient-to-br from-green-500 to-green-600 text-white px-8 md:px-10 py-4 rounded-xl font-bold text-base md:text-lg hover:shadow-xl hover:-translate-y-1 hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 active:scale-95 cursor-pointer">
+          Assinar Newsletter
+          <span class="material-symbols-outlined">send</span>
+        </button>
+      </div>
+      <p class="text-white/40 text-[10px] mt-6">Ao se inscrever, você concorda com nossa Política de Privacidade. Prometemos não enviar spam.</p>
+    </div>
+  </div>
+</section>
+
+</Base>
